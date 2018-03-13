@@ -29,16 +29,43 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="box-table">
-			<div class="box-table-cell">
-				<div class="container">
-					<div id="form_container">
-						<form action="#" method="POST" class="form_container">
-							<input name="url" type="text" class="shorten-input" placeholder="Paste a link to shorten it" value="" autocomplete="off" autocorrect="off" autocapitalize="off">
-							<button id="shorten_btn" type="submit" class="btn shorten-button">Shorten</button>
-						</form>
-					</div>
+		<header id="header" class="header">
+			<div class="container">
+				<h1 class="header-logo">
+					<a href="/" rel="nofollow">
+						<img src="images/download.svg" alt="">
+					</a>
+				</h1>
+				<div class="btn-group block-btn-header">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<button type="button" class="btn btn-primary login-by-facebook-popup">
+							<i class="fa fa-facebook-square " aria-hidden="true"></i> Login
+						</button>
+					</a>
+					<ul class="dropdown-menu animated fadeInRight">
+	                    <li>
+	                        <a href="change-info.html" class="infoAcount2">Personal information</a>
+	                    </li>
+	                    <li>
+	                        <a href="change-info.html#ChangePassword" class="infoAcount3">Change Password</a>
+	                    </li>
+	                    <li>
+	                        <a href="change-info.html#ChangePasswordtransaction" class="infoAcount4">Change transaction password</a>
+	                    </li>
+	                    <li class="divider"></li>
+	                    <li>
+	                        <a href="#" onclick="logout()">Logout</a>
+	                    </li>
+	                </ul>
 				</div>
+			</div>
+		</header><!-- /header -->
+		<div class="container">
+			<div id="form_container">
+				<form action="#" method="POST" class="form_container">
+					<input name="url" type="text" class="shorten-input" placeholder="Paste a link to shorten it" value="" autocomplete="off" autocorrect="off" autocapitalize="off">
+					<button id="shorten_btn" type="submit" class="btn shorten-button">Shorten</button>
+				</form>
 			</div>
 		</div>
 	</div><!-- /wrapper -->
@@ -47,6 +74,8 @@
 	<script src="js/jquery.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	<!-- ===== JS Wow ===== -->
+	<script src="lib/wow/wow.min.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
 
